@@ -1,0 +1,188 @@
+<br>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <main class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" <%= image_tag("pesca_praia.jpeg") %> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"  <%= image_tag("pesca_alto_mar2.jpeg") %> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"  <%= image_tag("pesquepague.jpeg") %> 
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><br>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Pesca</strong>
+              <h3 class="mb-0">Torneios de pesca</h3>
+              <div class="mb-1 text-muted">2021</div>
+              <p class="card-text mb-auto">Este ano teremos novidades, estamos preparando novas parcerias para expandir os torneios...</p>
+              <a href="#" class="stretched-link">Continue lendo</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="200" <%= image_tag("torneios.jpeg") %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Noticias da pesca</strong>
+              <h3 class="mb-0">Tabuas de Maré</h3>
+              <div class="mb-1 text-muted">Jan-2021 a Dez-2021</div>
+              <p class="mb-auto">Melhores momentos para pesca, Luas, horarios, estações do ano, regionais, locais e datas...</p>
+              <a href="#" class="stretched-link">Continue lendo</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="210" !important <%= image_tag("calendario_lunar.jpeg") %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">
+            Nossos Objetivos:
+          </h3>
+
+          <article class="blog-post">
+            <h4 class="blog-post-title">Ser um Local de encontro exclusivamente de pescadores</h4>
+            <p class="blog-post-meta">Seja membro deste grupo <a href="#">cadastre-se</a></p>
+            <p>Como associado, você poderá participar do <b  class="fucebooapesca"><font color=#FFF000>Fuce</font><font color=#34A852>B</font><font  color=#FBBC07>o</font><font color=#FBBC07>o</font><font color=#4285F4>a</font><font color=#8B008B>P</font><font color=#ff8C00>e</font><font color=#0000ff>s</font><font color=#008000>c</font><font color=#ff0000>a</font></b> e contar sua melhor historia "seja ela verdade ou mentira de pescador", vai inserir fotos, vídeos, poderá procurar os melhores pesqueiros "pagos ou de pesca livre", rios, lagoas, pesca de barranco, embarcado, na praia ou em alto mar. Poderá contactar pousadas, agencias de viajens com programas exclusivos de pesca, poderá ainda comprar e vender produtos de pesca novos e usados.</p>
+            <hr>
+            <h4 class="blog-post-title">Para onde ir?</h4>
+            <p>Vamos te mostrar o Brasil pescador, onde a busca será por <a href="#">Região / Localidade</a>. Você também poderá fazer parte de nossa historia, nos ajudando a conhecer todos os cantos deste imenso Brasil, pois junto com a gente cadastrará novos lugares, por mais distantes, por mais escondidos que sejam.</p>
+            <blockquote>
+              <como>Após seu <a href="#">cadastro</a> como membro, o acesso será liberado para que possas também <strong>Incluir locais, fotos e comentarios</strong> fazendo assim com que o nosso projeto de mostrar todo o Brasil pesquerio possa ser cada vez mais completo.</p>
+            </blockquote>
+            <h2>Nossos Parceiros</h2>
+            <p><a href="#">Pousadas / Hoteis / campings</a>, <a href="#">Restaurantes / Lanchonetes</a>, <a href="#">Lojas de produtos de pesca</a>, <a href="#">Agencias de viajens</a>, <a href="#">PesquePagues</a>. Seja nosso parceiro também, entre e faça seu cadastro</p>
+            
+
+          
+
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-secondary" href="#">Cadastro Parceiros</a>
+            <a class="btn btn-outline-secondary" href="#" tabindex="-1" aria-disabled="true">Cadastro Pescadores</a>
+          </nav>
+
+        </div>
+
+        <div class="col-md-4">
+          <div id="boxPoliticaDeUso" class="p-4 mb-3 bg-light rounded">
+            <h4 id="politicaDeUso" class="fst-italic">Politica de Uso</h4>
+            <p class="mb-0">Que o seu cadastro seja exclusivamente para comentarios ou inserção de assuntos e imagens relacionados a pesca, <b>se não for</b>, após analise,  nossos colaboradores excluirão seu cadastro.</p>
+          </div>
+
+          <div class="p-4">
+            <h5 class="fst-italic">Arquivos de pesca por data:</h5>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">March 2021</a></li>
+              <li><a href="#">February 2021</a></li>
+              <li><a href="#">January 2021</a></li>
+              <li><a href="#">December 2020</a></li>
+              <li><a href="#">November 2020</a></li>
+              <li><a href="#">October 2020</a></li>
+              <li><a href="#">September 2020</a></li>
+              <li><a href="#">August 2020</a></li>
+              <li><a href="#">July 2020</a></li>
+              <li><a href="#">June 2020</a></li>
+              <li><a href="#">May 2020</a></li>
+              <li><a href="#">April 2020</a></li>
+            </ol>
+          </div>
+
+          <div class="p-4">
+            <h6 class="fst-italic">Acesse:</h6>
+            <ol class="list-unstyled">
+              <li><a href="https://www.instagram.com/" ><img class="icons-tag"<%= image_tag("instagram.ico") %></a></li>
+              <li><a href="https://www.twitter.com"><img class="icons-tag"<%= image_tag("twitter.ico") %></a></li>
+              <li><a href="https://www.facebook.com"><img class="icons-tag"<%= image_tag("facebook.ico") %></a></li>
+            </ol>
+          </div>
+        </div>
+
+      </div> <!-- /.row -->
+
+    </main><br> <!-- /.container -->
+
+    
+    <footer class="container" class="blog-footer">
+      <p>Produce of <a href="http://devlandia.net/">Devlandia Br</a> - 2021 - <font color="white"> </font> <a href="#">Início</a></p>
+    </footer>
+    
+  </body>
+</html>

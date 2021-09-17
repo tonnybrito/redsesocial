@@ -1,0 +1,76 @@
+.lateral_menu {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: inherit;
+    height: 100vh;
+    box-shadow: 2px 2px 10px rgba(245, 245, 245, 0.2);
+    left: 0;
+    z-index: 20;
+    color: white;
+    font-size: 1rem;
+    img {
+        width: 150px;
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    ul {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        li {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
+
+.mobile-lateral-menu {
+    display: none;
+}
+
+.lateral_menu img {
+    border: 1px solid #989898;
+    box-shadow: 0 3px 3px -2px #989898;
+}
+
+.navbar-toggler img {
+    width: 30px !important;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-lateral-menu,
+    .mobile-lateral-menu button {
+        background-color: rgba(191, 170, 170, 0.8);
+        display: block;
+        z-index: 15;
+        width: 50px;
+        position: fixed;
+        margin-top: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 30;
+    }
+    .mobile-lateral-menu .navbar-toggler:focus {
+        background-color: transparent;
+    }
+    button:focus {
+        color: transparent;
+    }
+    .navbar-toggler img:focus {
+        color: transparent;
+    }
+    .lateral_menu {
+        display: none;
+        position: fixed;
+        width: 70%;
+        overflow-y: scroll;
+        box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.3);
+    }
+}
